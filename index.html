@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Catch the Framework</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- start screen -->
+    <div class="screen">
+        <h1>Catch the Framework</h1>
+        <button id="start-btn" class="btn">Start Game</button>
+    </div>
+
+    <!-- choose FW screen -->
+    <div class="screen">
+        <h1>Choose your favourite:</h1>
+        <ul class="frames-list">
+            <li>
+                <button class="choose-frame-btn">
+                    <p>Svelte</p>
+                    <img src="img/svelte.png" alt="Svelte logo" />
+                </button>
+            </li>
+            <li>
+                <button class="choose-frame-btn">
+                    <p>React</p>
+                    <img src="img/react.png" alt="React logo" />
+                </button>
+            </li>
+            <li>
+                <button class="choose-frame-btn">
+                    <p>Vue</p>
+                    <img src="img/vue.png" alt="Vue logo" />
+                </button>
+            </li>
+            <li>
+                <button class="choose-frame-btn">
+                    <p>Angular</p>
+                    <img src="img/angular.png" alt="Angular logo" />
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- gameplay area -->
+    <div class="screen game-area">
+        <h3 id="time">Time: 00:00</h3>
+        <h3 id="score">Score: 0</h3>
+        <h5 id="annoying-msg">
+            You are playing: <br />
+            The Impossible Game! <br />
+            There is no end!
+        </h5>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
